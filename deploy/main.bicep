@@ -15,7 +15,7 @@ param resourceNameSuffix string = uniqueString(resourceGroup().id)
 // Define the names for resources.
 var appServiceAppName = 'website-${resourceNameSuffix}'
 var appServicePlanName = 'website'
-var storageAccountName = 'mystorage${resourceNameSuffix}'
+var storageAccountName = 'storage${resourceNameSuffix}'
 
 var appServiceAppLinuxFrameworkVersion = 'DOCKER|dockersamples/static-site:latest'
 
